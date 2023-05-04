@@ -228,7 +228,7 @@
 // -------------------------------     -------------------------------
             bindings = <
                 &none
-                &kp C       &none       &reset       &none       &bootloader               &out OUT_USB &out OUT_BLE &none        &none        &bt BT_CLR
+                &kp C       &none       &none       &none       &bootloader               &out OUT_USB &out OUT_BLE &none        &none        &bt BT_CLR
                 &none       &none       &none        &none         &none                   &none        &none        &none        &none        &none
                 &kp KP_NUM  &kp PSCRN   &none        &none         &none                   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
                 &none       &none                    &none         &none                   &none        &none                     &none        &none 
