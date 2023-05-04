@@ -20,41 +20,36 @@ choice ZMK_DISPLAY_STATUS_SCREEN
         default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 endchoice
 
-if ZMK_DISPLAY
+# if ZMK_DISPLAY
 
-config SSD1306
-	default y
+# config SSD1306
+# 	default y
 
-config SSD1306_REVERSE_MODE
-	default y
+# config SSD1306_REVERSE_MODE
+# 	default y
 
-endif # ZMK_DISPLAY
+# endif # ZMK_DISPLAY
 
-if LVGL
-config LVGL_HOR_RES_MAX
-        int
-	default 128
+# if LVGL
+# config LV_HOR_RES_MAX
+# 	default 128
 
-config LVGL_VER_RES_MAX
-        int
-	default 32
+# config LV_VER_RES_MAX
+# 	default 32
 
-config LVGL_VDB_SIZE
-        int
-	default 64
+# config LV_Z_VDB_SIZE
+# 	default 64
 
-config LVGL_DPI
-        int
-	default 148
+# config LV_DPI_DEF
+# 	default 148
 
-config LVGL_BITS_PER_PIXEL
-        bool
-	default 1
+# config LV_Z_BITS_PER_PIXEL
+# 	default 1
 
-# choice LVGL_COLOR_DEPTH
-# 	default LVGL_COLOR_DEPTH_1
+# choice LV_COLOR_DEPTH
+# 	default LV_COLOR_DEPTH_1
 # endchoice
 
-endif # LVGL
+# endif # LVGL
 
 endif # SHIELD_SPC_EVDR
