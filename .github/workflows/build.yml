@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: zmkfirmware/zmk-build-arm:stable
+      image: zmkfirmware/zmk-build-arm:3.0-branch-20230106023947-3.0.0-0.13.2-9b1bbf4a062a-3852132176
     name: Build
     steps:
       - name: Checkout
