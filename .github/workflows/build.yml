@@ -10,11 +10,11 @@ jobs:
     name: Build
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: config/
       - name: Cache west modules
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -49,7 +49,7 @@ jobs:
           cp build/spc_evdr_xiao_samd/zephyr/zmk.uf2 spc_evdr_xiao_samd.uf2
           cp build/spc_evdr_xiao_ble/zephyr/zmk.uf2 spc_evdr_xiao_ble.uf2
       - name: Archive
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: firmware
           path: '*.uf2'
